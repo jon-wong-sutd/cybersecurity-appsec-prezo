@@ -1,0 +1,314 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=1024" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <title>Slides for Cybersecurity Presentation</title>
+
+  <link href="css/styles.css" rel="stylesheet" />
+
+</head>
+
+<body class="impress-enabled">
+
+  <div id="impress" data-min-scale="1">
+
+    <div id="title" class="step slide" data-x="0" data-y="0" data-z="1000">
+      <h1 style="margin-top: 20%;">Cybersecurity</h1>
+      <h2>via Application Security</h2>
+      <h3 style="margin-top: 20%;">A broad overview</h3>
+    </div>
+
+    <div id="upside-down" class="step slide" data-x="0" data-y="0" data-z="0">
+      <h1>Cyberweapons are dangerous?</h1>
+      <img style="position: absolute; left: 60%; top: 70%;" src="img/gun.png" width="200" />
+      <h2 class="substep">Are cyberweapons actually weapons?</h2>
+      <h2 class="substep">Do we buy armor in defense?</h2>
+    </div>
+
+    <div class="step slide" data-rotate="180" data-transition-duration="1000">
+      <h1>Cyberweapons are<br>Opportunistic Exploits</h1>
+
+      <img style="position: absolute; left: 25%; top: 30%;" src="img/hole_in_house.jpg" width="50%" />
+      <h2 class="substep" style="margin-top: 50%">Exploits of holes in our systems</h2>
+    </div>
+
+    <div class="step slide" data-rel-z="1000" data-rotate="-180" data-transition-duration="1000">
+      <h1>Real Weapons?</h1>
+      <h1>Revealed later</h1>
+      <div class="substep">
+        <h2>Some cyberweapons are real</h2>
+        <h2>How does a burglar crack a safe?</h2>
+        <h3 class="substep" style="margin-top: 20%;">Hint: A medical tool is used</h3>
+      </div>
+    </div>
+
+    <div id="root-cause-analyze" class="step slide" data-rel-x="0" data-rel-y="0" data-rel-z="0" data-transition-duration="1000"
+         data-x="0" data-y="0" data-z="0">
+      <h1>Cybersecurity</h1>
+      <h2>Root Cause Analysis</h2>
+      <ul style="width: 50%; margin: 0 auto;">
+        <li class="substep">No access control<br/>(<i style="color: #999">no lock!</i>)</li>
+        <li class="substep">Too many doors created<br/>(<i style="color: #999">not enough locks!</i>)</li>
+        <li class="substep">Key left out in the open<br/>(<i style="color: #999">please copy my key!</i>)</li>
+        <li class="substep">Bad access control design<br/>(<i style="color: #999">key under the rug!</i>)</li>
+      </ul>
+    </div>
+
+    <div class="step slide" data-z="-1000" data-transition-duration="1000">
+      <h1>No Access Control</h1>
+      <h2>Reasons? Excuses?</h2>
+      <div style="float: left; width: 70%">
+        <ul style="width: 100%; margin: 0 auto;">
+          <li class="substep" style="line-height: 1.5em">Cost<br/><i style="color: #999">No money / time to implement</i></li>
+          <li class="substep" style="line-height: 1.5em">Skill<br/><i style="color: #999">Don't know how to implement</i></li>
+          <li class="substep" style="line-height: 1.5em">Lapse<br/><i style="color: #999">Forgot to implement</i></li>
+        </ul>
+      </div>
+      <div style="float: right; width: 30%">
+        <h3 class="substep">Valid reasons.<br><br>Humans are better at creativity than productivity.</h2>
+      </div>
+      <div class="notes">
+        Lack of skill is also a valid reason. Businesses should focus on core competencies.
+      </div>
+    </div>
+
+    <div class="step slide" data-rel-x="1100" data-rel-y="300" data-rotate="30" data-transition-duration="1000">
+      <h1>Too Many Doors</h1>
+      <h2>Reasons? Excuses?</h2>
+      <div style="float: left; width: 70%">
+        <ul style="width: 100%; margin: 0 auto;">
+          <li class="substep" style="line-height: 1.5em">Default Installation<br/><i style="color: #999">"I used a template!"</i></li>
+          <li class="substep" style="line-height: 1.5em">Non-Surgical Deployment<br/><i style="color: #999">"All ports open, my software works!"</i></li>
+          <li class="substep" style="line-height: 1.5em">Promiscuous Security<br/>(blacklisting / negative approach)<br/><i style="color: #999">"Tell me why I can't let you in!"</i></li>
+        </ul>
+      </div>
+      <div style="float: right; width: 30%">
+      <div>
+        <h3 class="substep">Excuses,<br>all excuses!</h3>
+      </div>
+      </div>
+    </div>
+
+    <div class="step slide" data-rel-x="800" data-rel-y="800" data-rotate="60" data-transition-duration="1000">
+      <h1>Keys Left Out in Open</h1>
+      <h2>Typical Lapses</h2>
+      <div style="float: left; width: 70%">
+        <ul style="width: 100%; margin: 0 auto;">
+        <li class="substep" style="line-height: 1.5em">In-Transit Encryption omitted<br/><i style="color: #999">"Shout me your password, please"</i></li>
+        <li class="substep" style="line-height: 1.5em">Keys left in convenient places<br/><i style="color: #999">"Let me hold on to your password"</i></li>
+        </ul>
+      </div>
+      <div style="float: right; width: 30%">
+        <p class="substep" style="line-height: 1.5em; text-align: center"><u>lack of skill</u><br>or<br><u>lack of due diligence</u></p>
+      </div>
+      <div style="clear: both"></div>
+      <p class="substep" style="text-align: center;">Again, lack of skill is a valid reason.<br>Lack of diligence can be fixed via <i>frameworking</i><br>(explained later).</p>
+    </div>
+
+    <div class="step slide" data-rel-x="300" data-rel-y="1100" data-rotate="90" data-transition-duration="1000">
+      <h1>Bad Access Control Design</h1>
+      <h2>Typical Errors</h2>
+      <ul style="width: 100%; margin: 0 auto;">
+        <li class="substep" style="line-height: 1.5em"><div style="float: left; width: 60%">Hardcoded Keys<br/><i style="color: #999">"My lock works for John Doe and Jane Doe only"</i></div><div style="float: right; width: 40%; text-align: center">brittle access control system</div><div style="clear: both;"></div></li>
+        <li class="substep" style="line-height: 1.5em"><div style="float: left; width: 60%">Security by Obscurity<br/><i style="color: #999">"Konami code! <tt>up up down down left right a b Enter</tt>"</i></div><div style="float: right; width: 40%; text-align: center">Eschews keys altogether</div></li>
+      </ul>
+
+      <div class="notes">
+        <p>Hardcoded keys require the entire locking mechanism to be modified whenever adding access for a new user. This modification can accidentally break the locking mechanism. The proper way to design a locking mechanism is to make sure it is <i>consistently robust, competent, and stable</i>. Hardcoded keys require "<i>breaking open the locking mechanism</i>" just to add new users, making the access control mechanism brittle and unstable.</p>
+
+        <p>Security by obscurity eschews keys altogether, requiring specific knowledge to open locks (<i style="color: #999">"secret button(s) behind the piano, under the rug, etc"</i>.</p>
+      </div>
+    </div>
+
+    <div id="root-cause-solve" class="step slide" data-transition-duration="1000" data-x="0" data-y="0" data-z="0">
+      <h1>Cybersecurity</h1>
+      <h3>Solving Root Causes</h3>
+      <ul style="width: 100%; margin: 0 auto;">
+        <li class="substep">Know Your Software (Test-Driven Development)<br/><i style="color: #999">"It's not working till we test and measure it!"</i></li>
+        <li class="substep">Frameworking (aka D.R.Y.)<br/><i style="color: #999">"Everyone, do things my way!"</i></li>
+        <li class="substep">Open Sourcing<br/><i style="color: #999">"Together, as a human race!"</i></li>
+        <li class="substep">Outsourcing<br/><i style="color: #999">"We need experts to <u>blind</u> us with awesomeness!"</i></li>
+      </ul>
+    </div>
+
+    <div class="step slide" data-z="-1000" data-transition-duration="1000">
+      <h1>Test-Driven Development</h1>
+      <div style="float: left; width: 50%">
+        <div class="substep">
+          <h3 style="margin:0"><u>Translation</u></h3>
+          <p style="text-align: center; margin: 0">(Know what you're testing)</p>
+        </div>
+        <h3 class="substep">Functional Specs</h3>
+        <div class="substep">
+          <div style="margin: 0 auto; text-align: center; font-size: 1em">&darr;</div>
+          <h3>Unit Tests</h3>
+        </div>
+        <div class="substep">
+          <div style="margin: 0 auto; text-align: center; font-size: 1em">&darr;</div>
+          <h3>Code Coverage</h3>
+        </div>
+      </div>
+      <div style="float: right; width: 50%">
+        <div class="substep">
+          <h3 style="margin:0"><u>Automation</u></h3>
+          <p style="text-align: center; margin: 0">(Delegate the testing)</p>
+          <h3 class="substep">Scaffolding</h3>
+        </div>
+        <div class="substep">
+          <div style="margin: 0 auto; text-align: center; font-size: 1em">&darr;</div>
+          <h3>Test Suites</h3>
+        </div>
+        <div class="substep">
+          <div style="margin: 0 auto; text-align: center; font-size: 1em">&darr;</div>
+          <h3>CI / CD</h3>
+        </div>
+      </div>
+
+      <div class="notes">
+        CI/CD is required to deploy for user testing, whether in open beta or in-house.
+      </div>
+    </div>
+
+    <div class="step slide" data-rel-x="1100" data-rel-y="300" data-rotate="30" data-transition-duration="1000">
+      <h1>Frameworking</h1>
+      <h2 style="margin-bottom: 0">En<i>Forced</i> <span style="color: #ff2020">D.R.Y. Principle</span></h2>
+      <p style="margin:0; text-align: center">(D.R.Y.: Don't Repeat Yourself)</p>
+      <ul style="width: 80%; margin: 0 auto;">
+        <li class="substep">Start with <b>Libraries</b><br/><i style="color: #999">"We has consistent way to do things!"</i></li>
+        <li class="substep">Build <b>Framework</b> when team gets bigger<br/><i style="color: #999">"Stay in line!"</i></li>
+        <li class="substep"><b>Democratize</b> Framework development<br/><i style="color: #999">"We build our tools as a team!"</i></li>
+      </ul>
+      <h3 class="substep">A framework is built<br/><u>by</u> the team <u>for</u> the team</h3>
+    </div>
+
+    <div class="step slide" data-rel-x="800" data-rel-y="800" data-rotate="60" data-transition-duration="1000">
+      <h1>Open Sourcing</h1>
+      <h2 class="substep"><u>Core Cybersecurity Modules</u><br>built by <i>industry as a whole</i></h2>
+      <p class="substep" style="text-align: center">(Recall <b>Libraries</b> vs <b>Framework</b>)</p>
+      <div class="substep">
+        <h3>Build your app, your unique selling point.</h3>
+        <h3>Leave common concerns to the human race!</h3>
+      </div>
+      <p class="substep" style="text-align: center">(Topic left untouched: Agile software construction, peer-review and extreme programming.)</p>
+
+      <div class="notes">Eg. OpenSSL</div>
+    </div>
+
+    <div id="tdd-graph" class="step slide" data-rel-x="300" data-rel-y="1100" data-rotate="90" data-transition-duration="1000">
+      <h1>Testing Cost per Feature</h1>
+      <canvas id="step-1-chart" width="400" height="200"></canvas>
+      <p style="margin: 0">y-axis: Percentage of <i>feature implementation cost</i>.</p>
+      <p style="margin: 0">x-axis: The n-th feature implemented.</p>
+
+      <div class="notes">
+        This is one reason why many software developer teams resist testing. TDD incurs a minimum testing cost, which is usually 100% of feature implementation cost for the 1st feature. Traditional testing has a lower starting cost, but ramps up quickly with more interconnected features implemented; developer teams simply cut off testing cost when it raises above 100%.
+      </div>
+    </div>
+
+    <div id="more-on-testing" class="step slide" data-transition-duration="1000" data-x="0" data-y="0" data-z="0">
+      <h1>More on Testing</h1>
+      <h3><u>Positive</u> vs <u>Negative</u> Testing</h3>
+      <div class="substep" style="float: left; width: 50%; color: #339933">
+        <h3>Positive Testing</h3>
+        <div style="margin: 0 auto; text-align: center; font-size: 1em">&darr;</div>
+        <h3 style="width: 90%">Make sure the software<br><br><u>behaves</u></h3>
+      </div>
+      <div class="substep" style="float: right; width: 50%; color: #993333">
+        <h3>Negative Testing</h3>
+        <div style="margin: 0 auto; text-align: center; font-size: 1em">&darr;</div>
+        <h3 style="width: 90%">Make sure the software<br><br>does not <u>misbehave</u></h3>
+      </div>
+    </div>
+
+    <div class="step slide" data-rel-x="1100" data-rel-y="300" data-rotate="30" data-transition-duration="1000">
+      <h1>Positive Testing</h1>
+      <h3>(A revision of Test-Driven Development)</h3>
+      <h3 class="substep">Ensure <u>all of the Functional Spec</u> is tested for</h3>
+      <h3 class="substep">Account for <u>every expected behavior</u></h3>
+      <h3 class="substep">Allow <u>no unexpected behavior</u><br>(<span style="color: #999">malicious backdoors!</span>)</h3>
+      <h3 class="substep" style="margin-top: 10%">Whitelisting source codes<br>=<br>Whitelisting behavior</h3>
+    </div>
+
+    <div class="step slide" data-rel-x="800" data-rel-y="800" data-rotate="60" data-transition-duration="1000">
+      <h1>Negative Testing</h1>
+      <h3>Stress-test:<br>Generate tests cases that break your system</h3>
+      <h3 class="substep">Use the American Fuzzy Lop</h3>
+      <h3 class="substep">No way to foresee such test cases</h3>
+      <h3 class="substep">Edge Cases:<br><i style="color: #999">< 0 is wrong, > 0 is right, but 0 itself?</i></h3>
+      <h3 class="substep">Reasonable effort on clear-cut cases, please!</h3>
+    </div>
+
+    <div class="step slide" data-rel-x="300" data-rel-y="1100" data-rotate="90" data-transition-duration="1000">
+      <h1>Testing Budget Insufficient?</h1>
+      <ul style="width: 80%; margin: 0 auto;">
+        <li class="substep">Start with <b>Trust Boundary</b><br/><i style="color: #999">"Here lies the line between 'us' and 'them'"</i></li>
+        <li class="substep">Test <b>outsourced work</b><br/><i style="color: #999">"Never assume their loyalty!"</i></li>
+        <li class="substep">Test <b>inside work</b> (eg. for PCI compliance)<br/><i style="color: #999">"Checks and balances, throughout!"</i></li>
+      </ul>
+    </div>
+
+    <div id="weapons" class="step slide" data-transition-duration="1000" data-x="0" data-y="0" data-z="0">
+      <h1>Weapons, Finally!</h1>
+      <h3 class="substep">Guns? <span class="substep">No</span></h3>
+      <div class="substep">
+        <h4>More like:</h4>
+        <ul>
+          <li>Hearing aids</li>
+          <li>Vision aids (night goggles, heat sensors, etc)</li>
+        </ul>
+      </div>
+      <h3 class="substep">In short, detection instruments.</h3>
+    </div>
+
+    <div class="step slide" data-z="-1000" data-transition-duration="1000">
+      <h1>Timing Attacks</h1>
+      <h3 class="substep">Akin to <i>acoustic signatures</i> in the detection of submarines!</h3>
+      <p class="substep">Algorithms' <u>execution timing</u> and <u>space consumption</u> can give away information!</p>
+      <p class="substep">Rule of thumb: Never say <i>"no such person"</i> in your authentication modules!</p>
+      <p class="substep">Famous examples: Meltdown and Spectre</p>
+    </div>
+
+    <div class="step slide" data-rel-x="1100" data-rel-y="300" data-rotate="30" data-transition-duration="1000">
+      <h1>Dealer Tells,<br>and Poker Faces</h1>
+      <h3 class="substep">Ensure your cybersecurity algorithms execute in <u>constant time</u> ( O(1) )</h3>
+      <h3 class="substep">Open source cybersecurity modules for public audit</h3>
+      <h3 class="substep">That's all for cyberweapons! Watch movies for more excitement.</h3>
+    </div>
+
+
+    <!--<div id="overview" class="step future" data-x="3000" data-y="1500" data-scale="10" style="pointer-events: none; position: absolute; transform: translate(-50%, -50%) translate3d(3000px, 1500px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(10); transform-style: preserve-3d;" data-z="0">
+    </div>-->
+
+  </div>
+
+  <!--
+      Add navigation-ui controls: back, forward and a select list.
+      Add a progress indicator bar (current step / all steps)
+      Add the help popup plugin
+    -->
+  <div id="impress-toolbar"><span id="impress-toolbar-group-0"><button id="impress-navigation-ui-prev" title="Previous" class="impress-navigation-ui">&lt;</button><select id="impress-navigation-ui-select" title="Go to" class="impress-navigation-ui">
+        <option value="title">title</option>
+        <option value="step-2">step-2</option>
+        <option value="step-3">step-3</option>
+        <option value="overview">overview</option>
+      </select><button id="impress-navigation-ui-next" title="Next" class="impress-navigation-ui">&gt;</button></span><span id="impress-toolbar-group-10"><button id="impress-autoplay-playpause" title="Autoplay" class="impress-autoplay" style="width: 26px; height: 18px;">||</button></span></div>
+
+  <div class="impress-progressbar"><div style="width: 13.33%;"></div></div>
+  <div class="impress-progress">2/15</div>
+
+  <div id="impress-help" style="display: none;"><table>
+      <tbody><tr><td><strong>H</strong></td><td>Show this help</td></tr>
+        <tr><td><strong>Left &amp; Right</strong></td><td>Previous &amp; Next step</td></tr>
+        <tr><td><strong>P</strong></td><td>Presenter console</td></tr>
+    </tbody></table>
+  </div>
+
+  <script src="js/Chart.bundle.min.js"></script>
+  <script src="js/impress.js"></script>
+  <script src="js/script.js"></script>
+
+</body>
+</html>
